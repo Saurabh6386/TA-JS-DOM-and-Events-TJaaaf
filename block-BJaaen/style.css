@@ -1,0 +1,115 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.user,
+.computer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user span,
+.computer span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.user-icons,
+.computer-icons {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.user-icons li,
+.computer-icons li {
+    background-color: #5f27cd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+}
+
+.user-icons li:hover {
+    background-color: #7d5fff;
+    transform: translateY(-2px);
+}
+
+.computer-icons li {
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: default;
+}
+
+.result {
+    background-color: #dfe6e9;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Add this to make it look more like the image */
+.computer span::after {
+    font-weight: normal;
+    color: #666;
+    margin-left: 5px;
+}
+
+.user span::after {
+    font-weight: normal;
+    color: #666;
+    margin-left: 5px;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .user-icons,
+    .computer-icons {
+        flex-direction: column;
+    }
+}
