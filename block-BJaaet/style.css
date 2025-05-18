@@ -1,0 +1,109 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e3e7;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+input[type="text"]::placeholder {
+  color: #95a5a6;
+}
+
+/* Movie List */
+.movielist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movielist li {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.movielist li:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+/* Checkbox */
+.style-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: #4a90e2;
+}
+
+/* Movie Label */
+.movielist label {
+  flex: 1;
+  font-size: 1rem;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Watched state */
+.style-checkbox:checked + label {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+/* Delete Button */
+.movielist span {
+  color: #ef4444;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.movielist span:hover {
+  background-color: #fee2e2;
+  transform: scale(1.1);
+}
